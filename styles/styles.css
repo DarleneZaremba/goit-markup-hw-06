@@ -724,7 +724,8 @@ border-radius: 4px;
 margin-bottom: 10px;
 padding: 0;
 padding-left: 42px;
-transition: border 250ms var(--time-function);
+transition: border 250ms var(--time-function),
+            outline 250ms var(--time-function);
  
 }
 
@@ -732,6 +733,7 @@ transition: border 250ms var(--time-function);
 .data-modal .user-info:hover
 {
   border: 1px solid var(--accent-color);
+  outline: var(--accent-color);
 }
 
 .icon-modal-pos{
@@ -753,10 +755,13 @@ transition: border 250ms var(--time-function);
   height: 120px;
 border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-transition: border 250ms var(--time-function);
+transition: border 250ms var(--time-function),
+            comment 250ms var(--time-function);
 }
-.comment:hover{
+.comment:hover,
+.comment:focus{
   border: 1px solid var(--accent-color);
+  outline: var(--accent-color);
 }
 
 .comment::placeholder{
